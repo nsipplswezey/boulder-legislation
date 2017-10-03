@@ -2,11 +2,11 @@
 
 ## Parse NYC City Council agendas
 
-### Install
+### Install and Run
 
 ```
 npm install
 node index.js
 ```
 
-- Uses [jsdom](https://github.com/tmpvar/jsdom)
+Uses [jsdom](https://github.com/tmpvar/jsdom)
