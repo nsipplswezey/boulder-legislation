@@ -1,3 +1,24 @@
+/*
+Reference schema
+        "billid": "M 0545-2017",                                                                                                                                                                  
+        "item_number": 1,
+        "title": "Zoning, Establishing a Special Harlem River Waterfront District, Bronx (C170311ZMX, C170314PPX and 170315ZSX)",
+        "sponsors": ["Greenfield"],
+        "text": "By the Chair of the Land Use Committee Council Member Greenfield: Pursuant to Rule 11.20(c) of the Council Rules and Section 197-d(b)(3) of the New York City Charter, the Council hereby resolves that the actions of the City Planning Commission on Uniform Land Use Review Procedure application nos. C 170314 PPX and C 170315 ZSX shall be subject to Council review. These items are related to application nos. C 170311 ZMX and N 170314 PPX which are subject to Council review pursuant to Section 197-d(b)(1) of the New York City Charter",
+        "fiscal_impact": "None",
+        "status_log": [{
+            "date": "9/7/2017",
+            "status": "Approved, by Council"
+        }],
+        "question": "A motion was made that this Land Use Call-Up be Approved, by Council approved by consent Roll Call.",
+        "date": "2017-09-07",
+        "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147881&GUID=76BCCFBB-77F8-4E6D-9743-492CBBE48107",
+        "uid": "2017-09-07-M 0545-2017"
+      }
+
+
+
+*/
 const fs = require("fs")
 
 const jsdom = require("jsdom");
@@ -9,19 +30,35 @@ JSDOM.fromURL("http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=563540&GUID
 
 .then(dom => {
 
-  //console.log(dom.serialize());
+  //select all times
+  let tableSelector = "#ctl00_ContentPlaceHolder1_gridMain_ctl00 > tbody"  
+  let table = dom.window.document.querySelector(tableSelector)
+  //iterate through all rows
 
-  let item = dom.window.document.querySelector("#ctl00_ContentPlaceHolder1_gridMain_ctl00_ctl14_hypFile");
-  let bill = {}
+  let rows = Array.from(table.children);
 
-  console.log(item.text)
-  console.log(item.href)
+  let billData = rows 
+    .map((element) => {
+	  let atag = element.children[0].children[0]
+	  let billid = atag.text;
+	  let source_doc = atag.href;
 
+	  let bill = {billid:billid, source_doc:source_doc};
 
-  bill.title = item.text;
-  bill.source_doc = item.href
+	  return bill; 
+  })
+    .filter((bill) => bill.source_doc )
+  
+  return billData 
+})
 
-  fs.writeFileSync("./agenda.json", JSON.stringify(bill,null,2));
+.then(bills => {
+
+  console.log(bills.length);
+  fs.writeFileSync("./agenda.json", JSON.stringify(bills,null,2));
   
 
 });
+
+
+

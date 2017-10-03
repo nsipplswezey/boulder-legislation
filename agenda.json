@@ -1,4 +1,430 @@
-{
-  "title": "M 0543-2017",
-  "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147877&GUID=2785EFEA-24A4-4C9B-AD75-4BA2E97BB406&Options=&Search="
-}
+[
+  {
+    "billid": "M 0542-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147876&GUID=468791FA-599C-42B8-8F7F-DA81A5520660&Options=&Search="
+  },
+  {
+    "billid": "M 0543-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147877&GUID=2785EFEA-24A4-4C9B-AD75-4BA2E97BB406&Options=&Search="
+  },
+  {
+    "billid": "M 0544-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147878&GUID=8B0BC5C3-23DA-4C03-A098-2D036603F94D&Options=&Search="
+  },
+  {
+    "billid": "M 0545-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147881&GUID=76BCCFBB-77F8-4E6D-9743-492CBBE48107&Options=&Search="
+  },
+  {
+    "billid": "M 0546-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147882&GUID=C42CC219-1349-48DD-A1F8-B814D1F8C315&Options=&Search="
+  },
+  {
+    "billid": "Int 1550-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3011132&GUID=D76791B0-7913-4B00-9ADC-BA9A210D8168&Options=&Search="
+  },
+  {
+    "billid": "Int 1566-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3022117&GUID=F447D3C6-58EE-4BAF-8432-98F95C88E14E&Options=&Search="
+  },
+  {
+    "billid": "Int 1578-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3022118&GUID=A9E65F7A-31EE-4DCE-B757-5FA306B2F080&Options=&Search="
+  },
+  {
+    "billid": "LU 0730-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3123736&GUID=D7C95B30-F8D1-4D1F-998D-C528C325A191&Options=&Search="
+  },
+  {
+    "billid": "Res 1641-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146038&GUID=AF222081-152F-48ED-B12E-FB29CE4B32DF&Options=&Search="
+  },
+  {
+    "billid": "LU 0731-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3123737&GUID=C385F29D-04AE-4A1E-8F91-3786EE0466B9&Options=&Search="
+  },
+  {
+    "billid": "Res 1642-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146039&GUID=A495BCF1-FB97-4EA9-98B1-F46171FF30CA&Options=&Search="
+  },
+  {
+    "billid": "LU 0732-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3123738&GUID=6EC40902-20C7-4E62-8A35-8A5329D1AFCC&Options=&Search="
+  },
+  {
+    "billid": "Res 1643-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146040&GUID=E60E20CA-0917-456C-891C-A75DE2828B67&Options=&Search="
+  },
+  {
+    "billid": "LU 0733-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3123739&GUID=F0A67656-279F-419D-8346-FBAF3EA0FA13&Options=&Search="
+  },
+  {
+    "billid": "LU 0734-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3123740&GUID=4D624F35-2EDE-4A38-BA6D-3CBC44388AF8&Options=&Search="
+  },
+  {
+    "billid": "LU 0735-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3123741&GUID=1C7B61A5-F183-4D43-814A-68829D5C1A26&Options=&Search="
+  },
+  {
+    "billid": "LU 0736-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3123744&GUID=AC610C63-F488-4324-8A96-2D652D3714CD&Options=&Search="
+  },
+  {
+    "billid": "LU 0743-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3137819&GUID=59C98141-D1AC-4F3D-96B5-651694DE434A&Options=&Search="
+  },
+  {
+    "billid": "Res 1657-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3148906&GUID=1FAFD61D-9562-4DA5-B4DE-9DDEB93438F1&Options=&Search="
+  },
+  {
+    "billid": "LU 0744-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3137820&GUID=0DA3D424-A366-4A86-B4EC-0420B2ACE5E2&Options=&Search="
+  },
+  {
+    "billid": "Res 1644-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146046&GUID=BBB603D9-E5F6-4669-B642-38DF747ABBF8&Options=&Search="
+  },
+  {
+    "billid": "LU 0745-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3137821&GUID=AB2196D9-D646-464B-B57D-2325D448A233&Options=&Search="
+  },
+  {
+    "billid": "Res 1645-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146047&GUID=EE323787-445D-4FCD-9038-8579B847F61D&Options=&Search="
+  },
+  {
+    "billid": "Int 1236-2016",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=2813484&GUID=CCDA1D57-63A7-45CD-AAEB-DBCDCA9F0A95&Options=&Search="
+  },
+  {
+    "billid": "Int 1424-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=2939918&GUID=FFDB52E5-E22B-4D3E-8C72-C62E6240FCDC&Options=&Search="
+  },
+  {
+    "billid": "Int 0629-2015",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=2141283&GUID=CAF3E258-CCFB-4A95-8569-2C5DC6B2D10C&Options=&Search="
+  },
+  {
+    "billid": "Int 0401-2014",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=1825189&GUID=F4C6365C-036A-4FDD-8E91-E8075EE6FA35&Options=&Search="
+  },
+  {
+    "billid": "LU 0716-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106820&GUID=DC9087D6-68B7-4B45-A14E-B53398F1F9E1&Options=&Search="
+  },
+  {
+    "billid": "Res 1646-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147555&GUID=6EEA328C-841B-45B6-B609-0C60737E2DBB&Options=&Search="
+  },
+  {
+    "billid": "LU 0718-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106822&GUID=930A08A8-B971-4066-B2B5-3A16580CE73A&Options=&Search="
+  },
+  {
+    "billid": "Res 1647-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147556&GUID=72BDA591-6256-442D-A9AB-A8A82BA4E165&Options=&Search="
+  },
+  {
+    "billid": "LU 0719-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106823&GUID=B1D7612A-122F-413F-B7D4-3FBFEC045E34&Options=&Search="
+  },
+  {
+    "billid": "Res 1648-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147557&GUID=EF2B711B-61EC-4A21-8837-44A7F2FD56BF&Options=&Search="
+  },
+  {
+    "billid": "LU 0720-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106824&GUID=D1A94EC7-F1D0-4643-B6A3-D72320BDF2EB&Options=&Search="
+  },
+  {
+    "billid": "Res 1649-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147558&GUID=85C34D16-5409-4AEA-9361-64B58BCAC9F7&Options=&Search="
+  },
+  {
+    "billid": "LU 0721-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106825&GUID=9A80F80A-A37F-4999-AC22-71A9B1AC3E4A&Options=&Search="
+  },
+  {
+    "billid": "Res 1650-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147559&GUID=704DF370-7C22-4F83-AB4C-9C51E1F4D828&Options=&Search="
+  },
+  {
+    "billid": "LU 0722-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106826&GUID=765DB817-8341-4733-A5A2-9C41C7E94889&Options=&Search="
+  },
+  {
+    "billid": "Res 1651-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147560&GUID=1DB4A735-29FB-41DA-AD8D-8B643523C6BC&Options=&Search="
+  },
+  {
+    "billid": "LU 0723-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106830&GUID=679EA66F-D43F-49D6-9431-F9B6E83317E1&Options=&Search="
+  },
+  {
+    "billid": "Res 1652-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147561&GUID=B0B1104E-4F77-4378-9893-C4ADC32F5F03&Options=&Search="
+  },
+  {
+    "billid": "LU 0724-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106831&GUID=989A5245-0E3C-4D71-A317-FC4E20A8E029&Options=&Search="
+  },
+  {
+    "billid": "Res 1653-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147562&GUID=98ABBE6C-9542-4BD5-BF98-DC6B8739E195&Options=&Search="
+  },
+  {
+    "billid": "LU 0725-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106832&GUID=E216E14E-9F1F-4BC4-A012-F253D64C4801&Options=&Search="
+  },
+  {
+    "billid": "Res 1654-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147563&GUID=E5DA8B06-AF46-4804-AFCF-0C1DB99772C4&Options=&Search="
+  },
+  {
+    "billid": "LU 0726-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106833&GUID=4EC4896B-D872-4034-B750-0545802F580A&Options=&Search="
+  },
+  {
+    "billid": "Res 1655-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147564&GUID=49E787CB-1885-4E19-B151-478A37F33263&Options=&Search="
+  },
+  {
+    "billid": "LU 0727-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3106834&GUID=27E71C23-7B93-4EA0-9910-8334D3FF71C2&Options=&Search="
+  },
+  {
+    "billid": "Res 1656-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147565&GUID=89EB86FA-EC0C-43A8-9BFD-98F1BA95D6E7&Options=&Search="
+  },
+  {
+    "billid": "T2014-0002",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=1636856&GUID=8AA33489-0840-4AF0-86E6-09D76CBFDFB3&Options=&Search="
+  },
+  {
+    "billid": "Int 1550-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3011132&GUID=D76791B0-7913-4B00-9ADC-BA9A210D8168&Options=&Search="
+  },
+  {
+    "billid": "Int 1566-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3022117&GUID=F447D3C6-58EE-4BAF-8432-98F95C88E14E&Options=&Search="
+  },
+  {
+    "billid": "Int 1578-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3022118&GUID=A9E65F7A-31EE-4DCE-B757-5FA306B2F080&Options=&Search="
+  },
+  {
+    "billid": "Res 1641-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146038&GUID=AF222081-152F-48ED-B12E-FB29CE4B32DF&Options=&Search="
+  },
+  {
+    "billid": "Res 1642-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146039&GUID=A495BCF1-FB97-4EA9-98B1-F46171FF30CA&Options=&Search="
+  },
+  {
+    "billid": "Res 1643-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146040&GUID=E60E20CA-0917-456C-891C-A75DE2828B67&Options=&Search="
+  },
+  {
+    "billid": "Res 1657-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3148906&GUID=1FAFD61D-9562-4DA5-B4DE-9DDEB93438F1&Options=&Search="
+  },
+  {
+    "billid": "Res 1644-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146046&GUID=BBB603D9-E5F6-4669-B642-38DF747ABBF8&Options=&Search="
+  },
+  {
+    "billid": "Res 1645-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3146047&GUID=EE323787-445D-4FCD-9038-8579B847F61D&Options=&Search="
+  },
+  {
+    "billid": "Int 1236-2016",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=2813484&GUID=CCDA1D57-63A7-45CD-AAEB-DBCDCA9F0A95&Options=&Search="
+  },
+  {
+    "billid": "Int 1424-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=2939918&GUID=FFDB52E5-E22B-4D3E-8C72-C62E6240FCDC&Options=&Search="
+  },
+  {
+    "billid": "Int 0629-2015",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=2141283&GUID=CAF3E258-CCFB-4A95-8569-2C5DC6B2D10C&Options=&Search="
+  },
+  {
+    "billid": "Int 0401-2014",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=1825189&GUID=F4C6365C-036A-4FDD-8E91-E8075EE6FA35&Options=&Search="
+  },
+  {
+    "billid": "Res 1646-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147555&GUID=6EEA328C-841B-45B6-B609-0C60737E2DBB&Options=&Search="
+  },
+  {
+    "billid": "Res 1647-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147556&GUID=72BDA591-6256-442D-A9AB-A8A82BA4E165&Options=&Search="
+  },
+  {
+    "billid": "Res 1648-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147557&GUID=EF2B711B-61EC-4A21-8837-44A7F2FD56BF&Options=&Search="
+  },
+  {
+    "billid": "Res 1649-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147558&GUID=85C34D16-5409-4AEA-9361-64B58BCAC9F7&Options=&Search="
+  },
+  {
+    "billid": "Res 1650-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147559&GUID=704DF370-7C22-4F83-AB4C-9C51E1F4D828&Options=&Search="
+  },
+  {
+    "billid": "Res 1651-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147560&GUID=1DB4A735-29FB-41DA-AD8D-8B643523C6BC&Options=&Search="
+  },
+  {
+    "billid": "Res 1652-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147561&GUID=B0B1104E-4F77-4378-9893-C4ADC32F5F03&Options=&Search="
+  },
+  {
+    "billid": "Res 1653-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147562&GUID=98ABBE6C-9542-4BD5-BF98-DC6B8739E195&Options=&Search="
+  },
+  {
+    "billid": "Res 1654-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147563&GUID=E5DA8B06-AF46-4804-AFCF-0C1DB99772C4&Options=&Search="
+  },
+  {
+    "billid": "Res 1655-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147564&GUID=49E787CB-1885-4E19-B151-478A37F33263&Options=&Search="
+  },
+  {
+    "billid": "Res 1656-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147565&GUID=89EB86FA-EC0C-43A8-9BFD-98F1BA95D6E7&Options=&Search="
+  },
+  {
+    "billid": "T2014-0002",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=1636856&GUID=8AA33489-0840-4AF0-86E6-09D76CBFDFB3&Options=&Search="
+  },
+  {
+    "billid": "Res 1636-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3141241&GUID=83BBD409-9CF1-4CC0-A46D-A123A442CA5C&Options=&Search="
+  },
+  {
+    "billid": "Res 1636-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3141241&GUID=83BBD409-9CF1-4CC0-A46D-A123A442CA5C&Options=&Search="
+  },
+  {
+    "billid": "Res 1637-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147879&GUID=3608AC99-51ED-41D4-A43B-483532663D66&Options=&Search="
+  },
+  {
+    "billid": "Res 1638-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147880&GUID=356A3B92-CA09-49F2-B671-2FEF3CBA17C0&Options=&Search="
+  },
+  {
+    "billid": "Int 1697-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147855&GUID=23E5D9BF-3530-4F9B-8A18-73FA931DECA8&Options=&Search="
+  },
+  {
+    "billid": "Int 1698-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147566&GUID=13C923C6-E102-4C51-8732-09A2B3D822D4&Options=&Search="
+  },
+  {
+    "billid": "Res 1639-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3145154&GUID=B88F6C1B-5CB9-4662-8201-D4A98AC52F7E&Options=&Search="
+  },
+  {
+    "billid": "Int 1699-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147850&GUID=1AFBBEF2-DF52-4537-BF46-5A758919FF4A&Options=&Search="
+  },
+  {
+    "billid": "Int 1700-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147851&GUID=BC48FC36-29E2-4693-A01F-305BCBD12A50&Options=&Search="
+  },
+  {
+    "billid": "Int 1701-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147863&GUID=CE26B538-D76E-42E1-8C9F-77358EE5248C&Options=&Search="
+  },
+  {
+    "billid": "Res 1640-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147875&GUID=80E46338-42DF-487C-A7FA-AED3EDA10E38&Options=&Search="
+  },
+  {
+    "billid": "Int 1702-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147854&GUID=A5979652-A750-43F0-8865-6436A0632FB8&Options=&Search="
+  },
+  {
+    "billid": "Int 1703-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147853&GUID=C9381284-9707-4881-99B7-2FBB96C7CFD4&Options=&Search="
+  },
+  {
+    "billid": "Int 1704-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147848&GUID=3C692421-9DC3-49F7-B9DA-60089B9755CD&Options=&Search="
+  },
+  {
+    "billid": "Int 1705-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147852&GUID=B4D2FB4E-22EC-4812-8582-5AB54A606474&Options=&Search="
+  },
+  {
+    "billid": "Int 1706-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147849&GUID=BE39605D-322A-4C26-BB34-C946ECCBDBFE&Options=&Search="
+  },
+  {
+    "billid": "Int 1707-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3136796&GUID=0144E84F-0BEC-4DB9-ABC6-B564DE4F717C&Options=&Search="
+  },
+  {
+    "billid": "LU 0747-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147856&GUID=1731107D-5047-44A8-953B-05EF2D4809B4&Options=&Search="
+  },
+  {
+    "billid": "LU 0747-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147856&GUID=1731107D-5047-44A8-953B-05EF2D4809B4&Options=&Search="
+  },
+  {
+    "billid": "LU 0748-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147857&GUID=6B84480E-2941-4A08-A799-7190C2861D7A&Options=&Search="
+  },
+  {
+    "billid": "LU 0748-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147857&GUID=6B84480E-2941-4A08-A799-7190C2861D7A&Options=&Search="
+  },
+  {
+    "billid": "LU 0749-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147858&GUID=425CC94D-9B4D-4E27-817A-55606B7A34E2&Options=&Search="
+  },
+  {
+    "billid": "LU 0749-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147858&GUID=425CC94D-9B4D-4E27-817A-55606B7A34E2&Options=&Search="
+  },
+  {
+    "billid": "LU 0750-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147859&GUID=DD4B6C2E-3E66-48A8-A8CD-8EA72091633E&Options=&Search="
+  },
+  {
+    "billid": "LU 0750-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147859&GUID=DD4B6C2E-3E66-48A8-A8CD-8EA72091633E&Options=&Search="
+  },
+  {
+    "billid": "LU 0751-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147860&GUID=F5E79DFB-4EFC-4661-B25D-882AF118427A&Options=&Search="
+  },
+  {
+    "billid": "LU 0751-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147860&GUID=F5E79DFB-4EFC-4661-B25D-882AF118427A&Options=&Search="
+  },
+  {
+    "billid": "LU 0752-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147861&GUID=BE46EF33-712C-45EF-BBB1-C7FC91BA09F1&Options=&Search="
+  },
+  {
+    "billid": "LU 0752-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147861&GUID=BE46EF33-712C-45EF-BBB1-C7FC91BA09F1&Options=&Search="
+  },
+  {
+    "billid": "LU 0753-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147862&GUID=F4F92D1D-E554-471D-995C-28D5343CC9CA&Options=&Search="
+  },
+  {
+    "billid": "LU 0753-2017",
+    "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147862&GUID=F4F92D1D-E554-471D-995C-28D5343CC9CA&Options=&Search="
+  }
+]
