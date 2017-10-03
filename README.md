@@ -13,7 +13,6 @@ Uses [jsdom](https://github.com/tmpvar/jsdom)
 
 Current reference schema:
 ```
-/*                                                                                                                                                                                               
         "billid": "M 0545-2017",                                                                                                                                                                  
         "item_number": 1,
         "title": "Zoning, Establishing a Special Harlem River Waterfront District, Bronx (C170311ZMX, C170314PPX and 170315ZSX)",
@@ -29,8 +28,4 @@ Current reference schema:
         "source_doc": "http://legistar.council.nyc.gov/LegislationDetail.aspx?ID=3147881&GUID=76BCCFBB-77F8-4E6D-9743-492CBBE48107",
         "uid": "2017-09-07-M 0545-2017"
       }
-
-
-
-*/
 ```
