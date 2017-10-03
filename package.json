@@ -1,0 +1,14 @@
+{
+  "name": "nyc-legislation",
+  "version": "1.0.0",
+  "description": "Create JSON from NYC legislation pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nsipplswezey@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdom": "^11.3.0"
+  }
+}
