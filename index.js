@@ -30,6 +30,12 @@ JSDOM.fromURL("http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=563540&GUID
 
 .then(dom => {
 
+
+  //get agenda date
+  let dateSelector = "#ctl00_ContentPlaceHolder1_lblDate"
+  let dateElement = dom.window.document.querySelector(dateSelector);
+  let agendaDate = dateElement.textContent
+
   //select all times
   let tableSelector = "#ctl00_ContentPlaceHolder1_gridMain_ctl00 > tbody"  
   let table = dom.window.document.querySelector(tableSelector)
@@ -43,7 +49,11 @@ JSDOM.fromURL("http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=563540&GUID
 	  let billid = atag.text;
 	  let source_doc = atag.href;
 
-	  let bill = {billid:billid, source_doc:source_doc};
+	  let bill = {
+	    billid:billid, 
+		source_doc:source_doc,
+		date:agendaDate
+		};
 
 	  return bill; 
   })
@@ -54,11 +64,66 @@ JSDOM.fromURL("http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=563540&GUID
 
 .then(bills => {
 
-  console.log(bills.length);
-  fs.writeFileSync("./agenda.json", JSON.stringify(bills,null,2));
-  
+  //now that we have item URLs, we navigate to them
+  //then we can generate a bunch of promises?
+  //and chain process them
 
-});
+  let agendaDate = bills[0].date;
+
+  //generate an array of promises wrapping up the DOMs of the legislation
+  let options = {};
+  //let billDetailPages = bills.slice(0,3).map(bill => JSDOM.fromURL(bill.source_doc,options)) 
+  let billDetailPages = bills.map(bill => JSDOM.fromURL(bill.source_doc,options)) 
+
+
+  //process that array of promises with appropriate selectors
+  Promise.all(billDetailPages)
+  	.then((pages) => {
+
+	  let fullBills = pages.map((page,id) => {
+
+        let billIdSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblFile2");
+        let billIdText = billIdSpan.textContent;
+
+	    let titleSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblName2");
+	    let titleText = titleSpan.textContent
+
+		let billTextSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblTitle2");
+        let billText = billTextSpan.textContent
+
+        let sponsorSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblSponsors2");
+		let billSponsors = sponsorSpan ? Array.from(sponsorSpan.children).map(sponsorTag => sponsorTag.text) : null;
+
+    
+        let bill = {
+          billid: billIdText,
+		  item_number:id,
+		  title:titleText,
+		  text: billText,
+		  sponsors:billSponsors,
+		  fiscal_impact: "None",
+		  status_log: [{}],
+		  question: "A motion was made that this Introduction be Approved by Council approved by Roll Call",
+          date: agendaDate,
+		  source_doc: null,
+		  uid: agendaDate + billIdText
+		}
+
+	    console.log(bill);
+		return bill;
+      });
+
+      console.log(fullBills);
+
+      fs.writeFileSync("./agenda.json", JSON.stringify(fullBills,null,2));
+	  
+	})
+
+})
+
+.catch(error => {
+  console.log(error)
+})
 
 
 
