@@ -1,7 +1,7 @@
 const fs = require("fs")
 
 
-let seedPath = "../nyc-api/config/seed.json"
+let seedPath = "../oak-api/config/seed.json"
 let seed = JSON.parse(fs.readFileSync(seedPath,{encoding:"utf8"}));
 console.log("Production seed length before wipe", seed.production.Bill.length)
 seed.production.Bill = []; 

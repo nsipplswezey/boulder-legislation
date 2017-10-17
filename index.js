@@ -24,54 +24,49 @@ const _ = require("lodash")
 
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-
-
-//const agendaUrl ="http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=565756&GUID=2DE3E475-8E5B-4B27-9A8C-58C830156A1B" 
-//const agendaUrl ="http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=563540&GUID=26A3BD82-86F3-47FE-A13E-AAC05219B54E" 
-
 const options = {};
 
-
-const nycOptions = {
+const oakOptions = {
   agendaUrls : [
-    "http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=565756&GUID=2DE3E475-8E5B-4B27-9A8C-58C830156A1B",
-    "http://legistar.council.nyc.gov/MeetingDetail.aspx?ID=563540&GUID=26A3BD82-86F3-47FE-A13E-AAC05219B54E" ],
+    "https://oakland.legistar.com/MeetingDetail.aspx?ID=568477&GUID=28B72F66-522E-4C39-B005-599E0D41DDB3",
+    "https://oakland.legistar.com/MeetingDetail.aspx?ID=564804&GUID=5B718CAF-E7C8-4B65-AAEB-D11850B8EBB9" ],
   agendaDataSelectors : {
-    date : "#ctl00_ContentPlaceHolder1_lblDate"
+    date : "#ctl00_ContentPlaceHolder1_lblDate",
+    table : "#ctl00_ContentPlaceHolder1_gridMain_ctl00 > tbody"
   },
   billDataSelectors : {
     bill_id: "#ctl00_ContentPlaceHolder1_lblFile2",
     item_number:"",
-	title:"#ctl00_ContentPlaceHolder1_lblName2",
-	text: "#ctl00_ContentPlaceHolder1_lblTitle2",
-	sponsors:"#ctl00_ContentPlaceHolder1_lblSponsors2",
-	fiscal_impact: "",
-	status_log: "",
-	question: "",
+	  title:"#ctl00_ContentPlaceHolder1_lblName2",
+	  text: "#ctl00_ContentPlaceHolder1_lblTitle2",
+	  sponsors:"#ctl00_ContentPlaceHolder1_lblSponsors2",
+	  fiscal_impact: "",
+	  status_log: "",
+	  question: "",
     date:  "#ctl00_ContentPlaceHolder1_lblDate",
-	source_doc: "",
-	uid: "", 
+	  source_doc: "",
+	  uid: "", 
   },
-   billDataPlaceholders : {
+  billDataPlaceholders : {
     bill_id: "",
     item_number:"id",
-	title:"",
-	text: "",
-	sponsors:"",
-	fiscal_impact: "None",
-	status_log: [{}],
-	question: "A motion was made that this Introduction be Approved by Council approved by Roll Call",
+  	title:"",
+  	text: "",
+	  sponsors:"",
+	  fiscal_impact: "None",
+	  status_log: [{}],
+  	question: "Shall this resolution be adopted?",
     date:  "",
-	source_doc: null,
-	uid: "billId", 
+	  source_doc: null,
+	  uid: "billId", 
   },
   outputPaths : {
-    seed : "../nyc-api/config/seed.json",
+    seed : "../oak-api/config/seed.json",
     local :  "./agenda.json"
   }		
 }
 
-const agendaUrl = nycOptions.agendaUrls[1]
+const agendaUrl = oakOptions.agendaUrls[1]
 
 JSDOM.fromURL(agendaUrl,options)
 
@@ -79,12 +74,12 @@ JSDOM.fromURL(agendaUrl,options)
   
   console.log("requesting agenda at", agendaUrl)
   //get agenda date
-  let dateSelector = "#ctl00_ContentPlaceHolder1_lblDate"
+  let dateSelector = oakOptions.agendaDataSelectors.date 
   let dateElement = dom.window.document.querySelector(dateSelector);
   let agendaDate = dateElement.textContent
 
   //select all times
-  let tableSelector = "#ctl00_ContentPlaceHolder1_gridMain_ctl00 > tbody"  
+  let tableSelector = oakOptions.agendaDataSelectors.table  
   let table = dom.window.document.querySelector(tableSelector)
   //iterate through all rows
 
@@ -134,55 +129,55 @@ JSDOM.fromURL(agendaUrl,options)
 
 	  let scrapedBills = pages.map((page,index) => {
 
-        let billIdSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblFile2");
-        let billIdText = billIdSpan.textContent;
-        let billId = billIdText.split(" ").join("-");
+      let billIdSpan = page.window.document.querySelector(oakOptions.billDataSelectors.bill_id);
+      let billIdText = billIdSpan.textContent;
+      let billId = billIdText.split(" ").join("-");
 
-	    let titleSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblName2");
+	    let titleSpan = page.window.document.querySelector(oakOptions.billDataSelectors.title);
 	    let titleText = titleSpan.textContent
 
-		let billTextSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblTitle2");
-        let billText = billTextSpan.textContent
+		  let billTextSpan = page.window.document.querySelector(oakOptions.billDataSelectors.text);
+      let billText = billTextSpan.textContent
 
-        let sponsorSpan = page.window.document.querySelector("#ctl00_ContentPlaceHolder1_lblSponsors2");
-		let billSponsors = sponsorSpan ? Array.from(sponsorSpan.children).map(sponsorTag => sponsorTag.text) : null;
+      let sponsorSpan = page.window.document.querySelector(oakOptions.billDataSelectors.sponsors);
+		  let billSponsors = sponsorSpan ? Array.from(sponsorSpan.children).map(sponsorTag => sponsorTag.text) : null;
 
-        let bill = {
-          id: billId,
-		  item_number:index,
-		  title:titleText,
-		  text: billText,
-		  sponsors:billSponsors,
-		  fiscal_impact: "None",
-		  status_log: [{}],
-		  question: "A motion was made that this Introduction be Approved by Council approved by Roll Call",
-          date: agendaDate,
-		  source_doc: null,
-		  uid: `${agendaDate}-${billId}`
-		}
+      let bill = {
+        id: billId,
+		    item_number:index,
+		    title:titleText,
+		    text: billText,
+		    sponsors:billSponsors,
+		    fiscal_impact: oakOptions.billDataPlaceholders.fiscal_impact,
+		    status_log: [{}],
+		    question: oakOptions.billDataPlaceholders.question,
+        date: agendaDate,
+		    source_doc: null,
+		    uid: `${agendaDate}-${billId}`
+		  }
 
-		console.log(`Scraping ${bill.uid}`)
-		return bill;
+		  console.log(`Scraping ${bill.uid}`)
+		  return bill;
       });
 
       //console.log(fullBills);
 
       //new approach, read the seed, merge with the scrape, write
-	  //next refactor, write all the json to a directory
-	  //split the scraping and JSON writing script
-	  //from the merging and seeding script
+	    //next refactor, write all the json to a directory
+	    //split the scraping and JSON writing script
+	    //from the merging and seeding script
 
-      let seedPath = "../nyc-api/config/seed.json"
-	  let seed = JSON.parse(fs.readFileSync(seedPath,{encoding:"utf8"}));
+      let seedPath = "../oak-api/config/seed.json"
+	    let seed = JSON.parse(fs.readFileSync(seedPath,{encoding:"utf8"}));
 	  
-	  //check if empty
+	    //check if empty
       seed.production.Bill = seed.production.Bill ? seed.production.Bill : []; 
 	 
-	  console.log("Current production seed bill count", seed.production.Bill.length);
+	    console.log("Current production seed bill count", seed.production.Bill.length);
       console.log("Bill count from current scrape", scrapedBills.length)
 
       //merge
-	  let mergedBills = [...seed.production.Bill,...scrapedBills]
+	    let mergedBills = [...seed.production.Bill,...scrapedBills]
       console.log(_.sortBy(mergedBills, 'uid').map(bill => bill.uid))    
 
 
@@ -198,7 +193,7 @@ JSDOM.fromURL(agendaUrl,options)
 	  seed.production.Bill = mergedBills;
 
 	  console.log("Merged production seed bill count", seed.production.Bill.length)
-	  fs.writeFileSync(seedPath, JSON.stringify(seed,null,2));
+	  //fs.writeFileSync(seedPath, JSON.stringify(seed,null,2));
       
 	  //write to both the local
 	  //and for now, write to the API server seed
@@ -206,7 +201,7 @@ JSDOM.fromURL(agendaUrl,options)
 	  let agendaPath = "./agenda.json";
 	  let agenda = JSON.parse(fs.readFileSync(agendaPath,{encoding:"utf8"}));
 	  agenda = Object.assign(agenda,scrapedBills);
-      //fs.writeFileSync("./agenda.json", JSON.stringify(agenda,null,2));
+    fs.writeFileSync("./agenda.json", JSON.stringify(agenda,null,2));
 
 	  console.log("Completed");
 	  console.log("Seed Bill length before scrape",seed.production.Bill.length);
