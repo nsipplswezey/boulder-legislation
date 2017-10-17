@@ -1,6 +1,6 @@
-# nyc-legislation
+# oak-legislation
 
-## Parse NYC City Council agendas
+## Parse Oakland City Council agendas
 
 ### Install and Run
 
