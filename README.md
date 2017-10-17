@@ -1,6 +1,6 @@
-# oak-legislation
+# boulder-legislation
 
-## Parse Oakland City Council agendas
+## Parse Boulder City Council agendas
 
 ### Install and Run
 
